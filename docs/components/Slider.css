@@ -1,0 +1,32 @@
+:root {
+  --container-size: 400px;
+}
+
+.slider {
+  max-width: var(--container-size);
+  border: 1px solid red;
+  position: relative;
+}
+
+.slider__slides {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+}
+
+.slider__slides > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.slider__controls {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  justify-content: space-between;
+}
